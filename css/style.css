@@ -1,0 +1,14 @@
+.main {
+    margin-top: 100px;
+}
+img {
+    width: 35px;
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    -webkit-filter: drop-shadow( 2px 2px 5px rgb(107, 101, 101) ); 
+            filter: drop-shadow(2px 2px 5px rgb(107, 101, 101));
+}
+div.product {
+    border: 1px solid #ccc;
+}
