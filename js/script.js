@@ -1,31 +1,38 @@
-const products = [
-    {Name: "Desktop", Description: "Dell Desktop", Price: 599, Quantity: 2},
-    {Name: "Laptop", Description: "HP Laptop", Price: 799, Quantity: 1},
-    {Name: "Pad", Description: "Samsung Pad", Price: 499, Quantity: 3}
-];
+var shopping_cart = {
+    products: [
+        { Name: "Desktop", Description: "Dell Desktop", Price: 599, Quantity: 2 },
+        { Name: "Laptop", Description: "HP Laptop", Price: 799, Quantity: 1 },
+        { Name: "Pad", Description: "Samsung Pad", Price: 499, Quantity: 3 }
+    ],
+    cart: [],
+    addToCart: function(index) {
+        this.cart.push(this.products[index]);
+    },
+    removeFromCart: function(index) {
+        cart.splice(index, 1);
+    }
+};
 
-let shoppingCart = [];
-
-function addToCart(index)
-{
-    var product = products[index];
-    shoppingCart.push(product);
-    console.log(shoppingCart);
-    renderHTML(shoppingCart, "shoppingCart");
-}
+// function addToCart(index)
+// {
+//     var product = products[index];
+//     shoppingCart.push(product);
+//     console.log(shoppingCart);
+//     renderHTML(shoppingCart, "shoppingCart");
+// }
 
 function changeQuantity(number)
 {
     console.log("Quantity Change")
 }
 
-function removeFromCart() 
-{
-    var index = this.id;
-    shoppingCart.splice(index, 1);
-    renderHTML(shoppingCart, "shoppingCart");
-    console.log(shoppingCart);
-}
+// function removeFromCart() 
+// {
+//     var index = this.id;
+//     shoppingCart.splice(index, 1);
+//     renderHTML(shoppingCart, "shoppingCart");
+//     console.log(shoppingCart);
+// }
 
 function calculateTotal() 
 {
